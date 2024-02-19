@@ -50,20 +50,20 @@ public:
 				tailers[index].setFinshTime(client.getSurviceTime()+client.getArriveTime());
 				tailers[index].setStatus(true);
 				tailers[index].surveCont++;
-				cout << "Customer : " << client.getName() << " survice Time = " << client.getSurviceTime() << " waiting time = " << client.getWaitingTime() << endl;
+				cout << "Customer : " << client.getName() << " survice Time = " << client.getSurviceTime() << " waiting time = " << client.getWaitingTime()<<" Minutes" << endl;
 			}
 			else
 			{
-				//if (tailers[index].getFinshTime() <= client.getArriveTime())
-				//{
-				//	//client.setWaitingTime(0);
+				if (tailers[index].getFinshTime() <= client.getArriveTime())
+				{
+				client.setWaitingTime(0);
 				//	//tailers[index].setStatus(false);
 
-				//}
-				//else
-				//{
+				}
+				else
+				{
 				 client.setWaitingTime(tailers[index].getFinshTime() - client.getArriveTime());
-				//}
+				}
 				 tailers[index].setStatus(false);
 				clients.push(client);
 			}
