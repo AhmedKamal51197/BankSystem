@@ -11,10 +11,12 @@ public:
 	double surveCont;
 	Tailer(){
 		surveCont = 0;
+		finshTime = 0;
 		setStatus(false);
 	}
 	Tailer(int id, string name)
 	{
+		finshTime = 0;
 		surveCont = 0;
 		setStatus(false);
 		setName(name);
