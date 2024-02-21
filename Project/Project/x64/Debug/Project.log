@@ -1,10 +1,5 @@
-﻿  Bank.cpp
-D:\BankSystem\Project\Project\Bank.h(34,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file 'Bank.cpp')
-  
-  Project.cpp
-D:\BankSystem\Project\Project\Bank.h(34,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+﻿  Project.cpp
+D:\BankSystem\Project\Project\Bank.h(36,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'Project.cpp')
   
-  Generating Code...
   Project.vcxproj -> D:\BankSystem\Project\x64\Debug\Project.exe

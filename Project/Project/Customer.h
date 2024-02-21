@@ -62,7 +62,8 @@ public:
 	bool   operator<(const Customer& customer) const {
 		if (this->arriveTime == customer.arriveTime)
 		{
-			return this->age <  customer.age;
+			
+			return this->age <  customer.age && customer.age>=60;
 		}
 		else
 		{
